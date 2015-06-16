@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/hotelsIntroImageViewStyle"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/image_loading_01"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/hotelsIntroTextViewStyle"
+            android:layout_below="@id/imageView"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_above="@id/textView"
+            android:background="@drawable/portrait1_translucent"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/search_top_background"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search_top_button_selected"
+            android:clickable="true"
+            android:orientation="vertical" 
+            android:id="@+id/homesLayout">
+
+            <TextView
+                style="@style/activitySearchTextViewStyle"
+                android:text="@string/rooms2" />
+
+            <TextView
+                style="@style/activitySearchTextViewStyle"
+                android:id="@+id/homesTextView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search_top_button_selected"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/liveTimeLayout" >
+
+            <TextView
+                style="@style/activitySearchTextViewStyle"
+                android:text="@string/live_time2" />
+
+            <TextView
+                style="@style/activitySearchTextViewStyle"
+                android:layout_width="match_parent"
+                android:id="@+id/liveTimeTextView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search_top_button_selected"
+            android:clickable="true"
+            android:orientation="vertical" 
+            android:id="@+id/leaveTimeLayout">
+
+            <TextView
+                style="@style/activitySearchTextViewStyle"
+                android:text="@string/leave_time2" />
+
+            <TextView
+                style="@style/activitySearchTextViewStyle"
+                android:id="@+id/leaveTimeTextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/listview_style" >
+    </ListView>
+
+</LinearLayout>

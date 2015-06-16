@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_items_minheight"
+    android:maxHeight="@dimen/listview_items_minheight"
+    android:minHeight="@dimen/listview_items_minheight" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/itemImageViewStyle"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/image_loading_03" />
+
+    <LinearLayout
+        style="@style/itemIntroTextLayoutStyle"
+        android:layout_marginRight="@dimen/space2"
+        android:layout_toRightOf="@id/imageView"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/space2"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:textColor="@color/items_text_color"
+            android:textSize="@dimen/app_small_textsize" 
+            android:lineSpacingMultiplier="1.4"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/lightColorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/app_small_textsize" 
+            android:layout_marginBottom="@dimen/space2"/>
+    </LinearLayout>
+
+</RelativeLayout>

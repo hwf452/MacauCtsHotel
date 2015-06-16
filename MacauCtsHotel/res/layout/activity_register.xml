@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/register" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/userNameLayout"
+                style="@style/selfMarginTopLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_01" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/username" />
+
+                <EditText
+                    android:hint="@string/code_hint"
+                    android:id="@+id/userNameEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_02" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailLayout"
+                style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_03" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/email" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passwordLayout"
+                style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_04" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/password" />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/passwordEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirmPasswordLayout"
+                style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_04" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/confirm_password" />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/confirmPasswordEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/checkbox_margin_left_right"
+                android:layout_marginRight="@dimen/checkbox_margin_left_right"
+                android:layout_marginTop="@dimen/margin_blew_register" >
+
+                <CheckBox
+                    android:id="@+id/rtp"
+                    style="@style/checkBoxStyle"
+                    android:checked="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/agree_the_items" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/check_the_items"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="@dimen/app_default_text_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/OK"
+                style="@style/okButtonStyle"
+                android:layout_marginTop="@dimen/margin_top_title"
+                android:onClick="submit"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

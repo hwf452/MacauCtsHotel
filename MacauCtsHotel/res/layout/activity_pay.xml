@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/credit_pay" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                style="@style/teamLastLayoutStyle"
+                android:layout_marginTop="@dimen/margin_top_title"
+                android:background="@drawable/list_column_background" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_01" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_toRightOf="@id/imageView6"
+                    android:text="@string/credit_type" />
+
+                <ImageView
+                    android:id="@+id/icon6"
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_14" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/selfTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/icon6"
+                    android:text="@string/please_choose" />
+            </RelativeLayout>
+
+            <LinearLayout style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_17" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/credit_date" />
+
+                <EditText
+                    android:id="@+id/edt_date"
+                    style="@style/selfEditTextStyle"
+                    android:hint="@string/credit_date_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailLayout"
+                style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_01" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/credit_id" />
+
+                <EditText
+                    android:id="@+id/edt_code"
+                    style="@style/selfEditTextStyle"
+                    android:hint="@string/credit_id_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirmPasswordLayout"
+                style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_04" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/credit_pwd" />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    style="@style/selfEditTextStyle"
+                    android:hint="@string/credit_pwd_hint"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/checkbox_margin_left_right"
+                android:layout_marginRight="@dimen/checkbox_margin_left_right"
+                android:layout_marginTop="@dimen/margin_blew_register" >
+
+                <CheckBox
+                    android:id="@+id/rtp"
+                    style="@style/checkBoxStyle"
+                    android:layout_alignParentLeft="true"
+                    android:checked="true"
+                    android:text="@string/agree_the_items" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/check_the_items"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="@dimen/app_default_text_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_title"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/lightColorTextViewStyle2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="@color/price_color"
+                    android:textSize="@dimen/ok_button_text_size" />
+
+                <Button
+                    android:id="@+id/OK"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ok_button_selected"
+                    android:text="@string/pay"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/ok_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

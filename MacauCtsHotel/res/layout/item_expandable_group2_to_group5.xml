@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_top_background" >
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/itemExpandableGroupTextStyle"
+        android:text="@string/app_name" />
+
+    <ImageView
+        style="@style/itemExpandableGroupIconStyle"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/item_expandable_group_icon_selected"
+        android:id="@+id/imageView" />
+
+</RelativeLayout>

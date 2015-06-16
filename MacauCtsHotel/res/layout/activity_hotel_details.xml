@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TopTitleTextViewStyle" />
+
+        <Button
+            android:id="@+id/toBaiduMap"
+            style="@style/TopTitleButton2Style"
+            android:text="@string/map" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/exlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/line"
+        android:groupIndicator="@null" 
+        android:cacheColorHint="@android:color/transparent">
+    </ExpandableListView>
+
+</LinearLayout>

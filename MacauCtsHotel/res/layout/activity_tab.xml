@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <RadioGroup
+            android:id="@+id/radioGroip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/bookRadioButton"
+                style="@style/tab_radio_button_style"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/book_tab_radio_button_selected"
+                android:text="@string/book" />
+
+            <RadioButton
+                android:id="@+id/saleRadioButton"
+                style="@style/tab_radio_button_style"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sale_tab_radio_button_selected"
+                android:text="@string/sale" />
+
+            <RadioButton
+                android:id="@+id/introRadioButton"
+                style="@style/tab_radio_button_style"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/intro_tab_radio_button_selected"
+                android:text="@string/intro" />
+
+            <RadioButton
+                android:id="@+id/settingRadioButton"
+                style="@style/tab_radio_button_style"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/setting_tab_radio_button_selected"
+                android:text="@string/setting" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/radioGroip" >
+
+            <fragment
+                android:id="@+id/bookLyout"
+                android:name="com.halong.macauctshotel.BookFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment
+                android:id="@+id/saleLayout"
+                android:name="com.halong.macauctshotel.SaleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment
+                android:id="@+id/introLayout"
+                android:name="com.halong.macauctshotel.IntroFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment
+                android:id="@+id/loginLayout"
+                android:name="com.halong.macauctshotel.LoginFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</TabHost><!--
+     <fragment
+                android:id="@+id/settingLayout"
+                android:name="com.halong.macauctshotel.SettingFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+-->

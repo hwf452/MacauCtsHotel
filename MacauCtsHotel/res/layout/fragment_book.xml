@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+ <Button
+            android:id="@+id/homeButton"
+            style="@style/HomeButtonStyle" />
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/myFavorites"
+            style="@style/TopTitleButton2Style"
+            android:text="@string/my_favorites" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/cityLayout"
+                style="@style/selfMarginTopLayoutStyle" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_15" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_toRightOf="@id/imageView1"
+                    android:text="@string/city_name" />
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/cityText"
+                    style="@style/selfTextStyle"
+                    android:layout_toLeftOf="@id/icon1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hotelLayout"
+                style="@style/teamFirstLayoutStyle"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_16" />
+
+                <TextView
+                    android:id="@+id/hotel"
+                    style="@style/selfTextStyle"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_toRightOf="@id/imageView2"
+                    android:text="@string/hotel" />
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/hotelText"
+                    style="@style/selfTextStyle"
+                    android:layout_toLeftOf="@id/icon2"
+                    android:layout_toRightOf="@id/hotel"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/liveTimeLayout"
+                style="@style/teamMiddleLayoutStyle"
+                android:onClick="toHotelCalendar" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_17" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_toRightOf="@id/imageView3"
+                    android:text="@string/live_time" />
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tv_enter"
+                    style="@style/selfTextStyle"
+                    android:layout_toLeftOf="@id/icon3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/leaveTimeLayout"
+                style="@style/teamMiddleLayoutStyle" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_17" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_toRightOf="@id/imageView4"
+                    android:text="@string/leave_time" />
+
+                <ImageView
+                    android:id="@+id/icon4"
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tv_leave"
+                    style="@style/selfTextStyle"
+                    android:layout_toLeftOf="@id/icon4"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/likeSpinnerLayout"
+                style="@style/teamLastLayoutStyle" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_19" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_toRightOf="@id/imageView6"
+                    android:text="@string/rooms" />
+
+                <ImageView
+                    android:id="@+id/icon6"
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_14" />
+
+                <TextView
+                    android:id="@+id/likeSpinnerTextView"
+                    style="@style/selfTextStyle"
+                    android:layout_width="@dimen/spinner_width"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/icon6"
+                    android:text="@string/rooms_date" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/OK"
+                style="@style/okButtonStyle"
+                android:layout_marginTop="@dimen/text_layout1_height"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

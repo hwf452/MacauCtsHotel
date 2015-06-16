@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/AppBackground" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/pay_flow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/state_button_height"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bookOrder"
+            style="@style/state_button_style"
+            android:text="@string/hotel_book" />
+
+        <Button
+            android:id="@+id/checkOrder"
+            style="@style/state_button_style"
+            android:text="@string/check_order" />
+
+        <Button
+            android:id="@+id/successOrder"
+            style="@style/state_button_style"
+            android:text="@string/success_order" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

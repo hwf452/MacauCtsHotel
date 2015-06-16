@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/user_info" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/teamFirstLayoutStyle"
+                android:layout_marginTop="@dimen/margin_blew_register" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_01" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/username" />
+
+                <EditText
+                    android:id="@+id/userNameEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/teamMiddleLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_25" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/ID_number" />
+
+                <EditText
+                    android:id="@+id/IDNumberEditText"
+                    style="@style/selfEditTextStyle"
+                    android:focusable="false"
+                    android:inputType="none" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/teamMiddleLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_25" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/Integration" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    style="@style/selfEditTextStyle"
+                    android:focusable="false"
+                    android:inputType="none" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/teamLastLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout1_height" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        style="@style/selfIconStyle"
+                        android:contentDescription="@string/icon"
+                        android:src="@drawable/icon_02" />
+
+                    <include layout="@layout/space" />
+
+                    <TextView
+                        style="@style/selfTextStyle"
+                        android:text="@string/name" />
+
+                    <EditText
+                        android:id="@+id/nameEditText"
+                        style="@style/selfEditTextStyle"
+                        android:layout_width="match_parent" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="changeSex"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/button10_on" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/teamFirstLayoutStyle"
+                android:layout_marginTop="@dimen/text_layout1_height" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_27" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/phone" />
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    style="@style/selfEditTextStyle"
+                    android:inputType="number" />
+            </LinearLayout>
+            
+            <!-- style="@style/teamMiddleLayoutStyle" -->
+            <LinearLayout style="@style/teamLastLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_03" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/email" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    style="@style/selfEditTextStyle"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/teamLastLayoutStyle"
+                android:visibility="gone" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_04" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/password" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    style="@style/selfEditTextStyle"
+                    android:hint="@string/password4_toast"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/OK"
+                style="@style/okButtonStyle"
+                android:layout_marginTop="@dimen/text_layout1_height"
+                android:onClick="changePasswordOnclick"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

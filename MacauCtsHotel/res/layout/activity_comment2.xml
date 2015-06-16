@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/comment_Management" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/teamFirstLayoutStyle"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/activityComment2TextViewStyle"
+            android:text="@string/order_number" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/activityComment2TextViewStyle"
+            android:text="@string/room_type1" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/teamLastLayoutStyle"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/activityComment2TextViewStyle"
+            android:text="@string/comment_all_type" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/activityComment2TextViewStyle"
+            android:text="@string/order_comment_suggest" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="@dimen/listview_items_maxheight"
+    android:minHeight="@dimen/listview_items_minheight" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/itemImageViewStyle"
+        android:background="@drawable/image_loading_03"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/textStyle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/listview_items_image_margin_left"
+        android:layout_toRightOf="@id/imageView"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:id="@+id/bookLyout"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textView1"
+        android:layout_centerVertical="true"
+        android:minHeight="60dp" >
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space2"
+            android:layout_marginTop="10dp"
+            android:text="@string/price"
+            android:textColor="@color/default_text_color"
+            android:textSize="@dimen/app_default_text_size" />
+
+        <TextView
+            android:id="@+id/bookButton"
+            style="@style/searchBookButtonStyle"
+            android:layout_below="@id/price"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/itemIntroTextLayoutStyle"
+        android:layout_height="60dp"
+        android:layout_below="@id/textView1"
+        android:layout_toLeftOf="@id/bookLyout"
+        android:layout_toRightOf="@id/imageView" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="2" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="@dimen/space"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="top_title_textview_color">#FFFFFF</color>
+    <color name="app_backgroud">#FDF4FE</color>
+    <color name="default_text_color">#545351</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="book_button_color">#F45C80</color>
+    <color name="sale_button_color">#F19048</color>
+    <color name="intro_button_color">#8CC95A</color>
+    <color name="setting_button_color">#61cdf5</color>
+    <color name="items_text_color">#191919</color>
+    <color name="light_text_color">#989898</color>
+    <color name="state_button_background">#070707</color>
+    <color name="state_button_text_color_selected">#be5a0d</color>
+    <color name="state_button_text_color_unselected">#59290a</color>
+    <color name="item_expandable_group5_child_text_color">#d78677</color>
+    <color name="price_color">#ee8117</color>
+    <color name="bottom_view_color">#E2E2E2</color>
+    <color name="tab_text_color">#37A8F7</color>
+    <color name="tab_text_default_color">#909090</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

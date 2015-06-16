@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/order_Management" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/teamFirstLayoutStyle"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/margin_top_title"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_number"
+                    android:textColor="@color/light_text_color"
+                    android:textSize="@dimen/app_default_big_text_size" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/room_type1"
+                    android:textColor="@color/light_text_color"
+                    android:textSize="@dimen/app_default_big_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/teamLastLayoutStyle"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="@string/comment_all_type"
+                        android:textColor="@color/light_text_color"
+                        android:textSize="@dimen/app_default_big_text_size" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space"
+                        android:textColor="@color/light_text_color" >
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@style/orderCommetnRadioButtonStyle"
+                            android:text="@string/good" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            style="@style/orderCommetnRadioButtonStyle"
+                            android:text="@string/normal" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@style/orderCommetnRadioButtonStyle"
+                            android:text="@string/bad" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_parent_left_right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:text="@string/order_comment_suggest"
+                        android:textColor="@color/light_text_color"
+                        android:textSize="@dimen/app_default_big_text_size" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/list_column17_background"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:textSize="@dimen/app_default_big_text_size"
+                        android:singleLine="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/OK"
+                style="@style/okButtonStyle"
+                android:layout_marginTop="@dimen/text_layout1_height"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

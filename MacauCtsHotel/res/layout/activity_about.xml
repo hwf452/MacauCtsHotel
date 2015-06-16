@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/about" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/userNameLayout"
+                style="@style/selfMarginTopLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_30" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/version" 
+                    android:gravity="right|center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_ver"
+                    style="@style/lightColorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/version_id"
+                    android:textSize="@dimen/app_default_text_size"
+                    android:gravity="right|center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                style="@style/selfBlewLayoutStyle" >
+
+                <ImageView
+                    style="@style/selfIconStyle"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/icon_31" />
+
+                <include layout="@layout/space" />
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:clickable="true"
+                    android:text="@string/update" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

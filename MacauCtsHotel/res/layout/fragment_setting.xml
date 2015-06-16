@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingLayout"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/homeButton"
+            style="@style/HomeButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/setting" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"    android:layout_marginBottom="@dimen/margin_blew_main" >
+
+            <RelativeLayout
+                android:id="@+id/userInfo"
+                style="@style/selfRelativeLayoutStyle" >
+
+                <TextView
+                    android:id="@+id/userInfoTextView"
+                    style="@style/selfTextStyle2"
+                    android:text="@string/user_info" />
+
+                <ImageView
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order"
+                style="@style/teamFirstLayoutStyle"
+                android:layout_below="@id/userInfo"
+                android:layout_marginTop="@dimen/icon_padding_left_right" >
+
+                <TextView
+                    android:id="@+id/orderTextView"
+                    style="@style/selfTextStyle2"
+                    android:text="@string/order_Management" />
+
+                <ImageView
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/comment"
+                style="@style/teamMiddleLayoutStyle"
+                android:layout_below="@id/order" >
+
+                <TextView
+                    android:id="@+id/commentTextView"
+                    style="@style/selfTextStyle2"
+                    android:text="@string/comment_Management" />
+
+                <ImageView
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/changePassword"
+                style="@style/teamMiddleLayoutStyle"
+                android:layout_below="@id/comment" >
+
+                <TextView
+                    android:id="@+id/changePasswordTextView"
+                    style="@style/selfTextStyle2"
+                    android:text="@string/change_password" />
+
+                <ImageView
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/help"
+                style="@style/teamMiddleLayoutStyle"
+                android:layout_below="@id/changePassword" >
+
+                <TextView
+                    android:id="@+id/helpTextView"
+                    style="@style/selfTextStyle2"
+                    android:text="@string/help" />
+
+                <ImageView
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/favorites"
+                style="@style/teamMiddleLayoutStyle"
+                android:layout_below="@id/help" >
+
+                <TextView
+                    android:id="@+id/favoritesTextView"
+                    style="@style/selfTextStyle2"
+                    android:text="@string/favorites" />
+
+                <ImageView
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about"
+                style="@style/teamLastLayoutStyle"
+                android:layout_below="@id/favorites" >
+
+                <TextView
+                    android:id="@+id/aboutTextView"
+                    style="@style/selfTextStyle2"
+                    android:text="@string/about" />
+
+                <ImageView
+                    style="@style/image_icon_style"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signout"
+                style="@style/selfMarginTopLayoutStyle"
+                android:layout_below="@id/about"
+                android:layout_marginTop="@dimen/icon_padding_left_right" >
+
+                <TextView
+                    android:id="@+id/signoutTextView"
+                    style="@style/selfTextStyle2"
+                    android:gravity="center"
+                    android:text="@string/signout" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

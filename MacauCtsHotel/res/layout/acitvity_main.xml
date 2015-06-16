@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/main_margin_left_right" >
+
+    <RelativeLayout
+        android:id="@+id/viewPagerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent" > 
+        </android.support.v4.view.ViewPager> 
+
+        <View
+            android:id="@+id/guideIconBackground"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/portrait1_translucent" />
+
+        <LinearLayout
+            android:id="@+id/guideIconLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@id/guideIconBackground"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!--
+            <ImageView
+                android:id="@+id/guideIcon1"
+                style="@style/guideIconStyle"
+                android:contentDescription="@string/app_name" />
+
+            <include layout="@layout/space" />
+
+            <ImageView
+                android:id="@+id/guideIcon2"
+                style="@style/guideIconStyle"
+                android:contentDescription="@string/app_name" />
+
+            <include layout="@layout/space" />
+
+            <ImageView
+                android:id="@+id/guideIcon3"
+                style="@style/guideIconStyle"
+                android:contentDescription="@string/app_name" />
+
+            <include layout="@layout/space" />
+
+            <ImageView
+                android:id="@+id/guideIcon4"
+                style="@style/guideIconStyle"
+                android:contentDescription="@string/app_name" />
+
+            <include layout="@layout/space" />
+
+            <ImageView
+                android:id="@+id/guideIcon5"
+                style="@style/guideIconStyle"
+                android:contentDescription="@string/app_name" />            -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_marginTop="@dimen/main_margin_left_right"
+        android:layout_weight="3" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bookButton"
+                style="@style/homeBigButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/icon_05" />
+ 
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/main_margin_left_right" />
+
+            <Button
+                android:id="@+id/introButton"
+                style="@style/homeBigButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/icon_06" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/main_margin_left_right"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/saleButton"
+                style="@style/homeBigButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_07" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/main_margin_left_right" />
+
+            <Button
+                android:id="@+id/callButton"
+                style="@style/homeBigButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_28" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/main_margin_left_right" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp" 
+                android:layout_weight="1" > 
+
+                <View
+                    android:id="@+id/quarter"
+                    android:layout_width="@dimen/main_margin_left_right"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/languageButton"
+                    style="@style/homeBigButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/quarter"
+                    android:background="@drawable/icon_34" />
+
+                <Button
+                    android:id="@+id/mapBtn"
+                    style="@style/homeBigButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/quarter"
+                    android:background="@drawable/icon_35" />
+            </RelativeLayout>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="@dimen/main_margin_left_right"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/settingButton"
+            style="@style/homeBigButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/icon_08" />
+
+        <View
+            android:layout_width="@dimen/main_margin_left_right"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/travelBtn"
+            style="@style/homeBigButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/icon_33" />
+    </TableRow>
+
+</TableLayout>

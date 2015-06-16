@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/selfMarginTopLayoutStyle"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/order_price" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/lightColorTextViewStyle2"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/price_color"
+                    android:textSize="@dimen/ok_button_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/live_time" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/lightColorTextViewStyle2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/leave_time" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/lightColorTextViewStyle2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/live_customers" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/lightColorTextViewStyle2"
+                    android:hint="@string/customers_name_write" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/selfMarginTopLayoutStyle"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/hotel_name" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/lightColorTextViewStyle2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/room_type4" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/lightColorTextViewStyle2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/days" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/lightColorTextViewStyle2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel_addr" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/lightColorTextViewStyle2"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/selfMarginTopLayoutStyle"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/book_customer" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/lightColorTextViewStyle2" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/book_customer_email" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/lightColorTextViewStyle2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout2_height" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/book_customer_phone" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/lightColorTextViewStyle2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/selfMarginTopLayoutStyle" >
+
+            <TextView
+                style="@style/selfTextStyle"
+                android:text="@string/remark2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/selfTextStyle"
+                android:text="@string/nothing" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/OK"
+            style="@style/okButtonStyle"
+            android:layout_marginTop="55dp"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</ScrollView>

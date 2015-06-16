@@ -1,0 +1,449 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppStyle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBackground">
+        <item name="android:background">@drawable/list_colunm01_bg</item>
+    </style>
+
+    <style name="textStyle1">
+        <item name="android:textSize">@dimen/app_small_textsize</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="textStyle2">
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="TopTitleLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/top_title_height</item>
+        <item name="android:background">@drawable/top_bg</item>
+    </style>
+
+    <style name="TopTitleTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/top_title_textview_textsize</item>
+        <item name="android:textColor">@color/top_title_textview_color</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:id">@id/textView</item>
+    </style>
+
+    <style name="TopTitleBackButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:onClick">backButton</item>
+        <item name="android:background">@drawable/return_btn_selector</item>
+    </style>
+
+    <style name="HomeButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/home_btn_selector</item>
+    </style>
+
+    <style name="TopTitleButton2Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/title_button2_selected</item>
+        <item name="android:textColor">@color/top_title_textview_color</item>
+    </style>
+
+    <style name="selfLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/text_layout1_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_left_right</item>
+        <item name="android:background">@drawable/list_column_background</item>
+        <item name="android:baselineAlignBottom">true</item>
+    </style>
+
+    <style name="selfMarginTopLayoutStyle" parent="selfLayoutStyle">
+        <item name="android:layout_marginTop">@dimen/margin_top_title</item>
+    </style>
+
+    <style name="bigSelfMarginTopLayoutStyle" parent="selfMarginTopLayoutStyle">
+        <item name="android:layout_height">@dimen/big_edit_text_height</item>
+    </style>
+    
+    <!-- 2014-9-12 更换备注高度减少 原引用bigSelfMarginTopLayoutStyle-->
+    <style name="bigSelfMarginTopLayoutStyle1" parent="selfMarginTopLayoutStyle">
+        <item name="android:layout_height">@dimen/big_edit_text_height1</item>
+    </style>
+
+    <style name="selfBlewLayoutStyle" parent="selfLayoutStyle">
+        <item name="android:layout_marginTop">@dimen/margin_blew_register</item>
+    </style>
+
+    <style name="selfIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="selfTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="selfRightTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="selfTextStyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="selfEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/app_default_big_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="bigSelfEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/app_default_big_text_size</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="okButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ok_button_margin</item>
+        <item name="android:layout_marginRight">@dimen/ok_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/ok_button_margin</item>
+        <item name="android:background">@drawable/ok_button_selected</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">@dimen/ok_button_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="checkBoxStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:checked">false</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:button">@drawable/check_selected</item>
+    </style>
+
+    <style name="homeBigButtonStyle">
+        <item name="android:onClick">toTabActivity</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tab_radio_button_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/tab_radiobtn_text_selector</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">-3dp</item>
+    </style>
+
+    <style name="selfRelativeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/text_layout1_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_left_right</item>
+        <item name="android:background">@drawable/list_column_background</item>
+        <item name="android:layout_marginTop">@dimen/margin_blew_register</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="image_icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/icon_13</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="teamFirstLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/text_layout1_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_left_right</item>
+        <item name="android:background">@drawable/list_column10_1_background</item>
+    </style>
+
+    <style name="teamMiddleLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/text_layout1_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_left_right</item>
+        <item name="android:background">@drawable/list_column10_2_background</item>
+    </style>
+
+    <style name="teamLastLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/text_layout1_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_left_right</item>
+        <item name="android:background">@drawable/list_column10_3_background</item>
+    </style>
+
+    <style name="hotelsIntroTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_left_right</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+    </style>
+
+    <style name="hotelsIntroImageViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/top_view_height</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="lightColorTextViewStyle">
+        <item name="android:gravity">right|bottom</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/light_text_color</item>
+    </style>
+
+    <style name="lightColorTextViewStyle2">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/light_text_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+    </style>
+
+    <style name="itemImageViewStyle">
+        <item name="android:layout_width">@dimen/listview_items_imageview_width</item>
+        <item name="android:layout_height">@dimen/listview_items_imageview_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/listview_items_image_margin_left</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:minHeight">@dimen/listview_items_imageview_height</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="itemIntroTextLayoutStyle">
+        <item name="android:layout_marginLeft">@dimen/listview_items_image_margin_left</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/listview_items_minheight</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_selected</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">12dp</item>
+    </style>
+
+    <style name="guideIconStyle">
+        <item name="android:src">@drawable/guide_icon_selected</item>
+        <item name="android:layout_width">@dimen/guide_icon_width_height</item>
+        <item name="android:layout_height">@dimen/guide_icon_width_height</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="guideIconStyle2">
+        <item name="android:src">@drawable/guide_icon_selected2</item>
+        <item name="android:layout_width">@dimen/guide_icon_width_height</item>
+        <item name="android:layout_height">@dimen/guide_icon_width_height</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="listView_style2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:id">@id/listview</item>
+        <item name="android:layoutAnimation">@anim/list_anim_layout</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="listview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@drawable/line</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:layoutAnimation">@anim/list_anim_layout</item>
+    </style>
+
+    <style name="state_button_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/state_button_selected</item>
+        <item name="android:textSize">@dimen/app_default_big_text_size</item>
+        <item name="android:textColor">@drawable/state_button_text_color_selected</item>
+    </style>
+
+    <style name="orderListViewItemsButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/cancel_button_selected</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">@dimen/ok_button_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/cancel</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:paddingRight">@dimen/margin_parent_left_right</item>
+        <item name="android:onClick">true</item>
+    </style>
+
+    <style name="orderCommetnRadioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/order_comment_radio_button_selected</item>
+        <item name="android:textColor">@color/light_text_color</item>
+        <item name="android:textSize">@dimen/app_small_textsize</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">@dimen/space2</item>
+    </style>
+
+    <style name="searchBookButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/cancel_button_selected</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">@dimen/app_small_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/search_book</item>
+        <item name="android:layout_margin">@dimen/space2</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="itemExpandableGroupTextStyle" parent="textStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">@dimen/app_default_big_text_size</item>
+    </style>
+
+    <style name="itemExpandableGroupIconStyle">
+        <item name="android:src">@drawable/item_expandable_group_icon_selected</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="activityComment2TextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/light_text_color</item>
+        <item name="android:textSize">@dimen/app_default_big_text_size</item>
+    </style>
+
+    <style name="bigTextSizeStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:textSize">@dimen/app_default_big_text_size</item>
+    </style>
+
+    <style name="activityHotelBookLinearLyoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_left_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_left_right</item>
+    </style>
+
+    <style name="activityHotelBookTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:textSize">@dimen/center_text_size</item>
+    </style>
+
+    <style name="activitySearchTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="textview33Style">
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="textview34Style">
+        <item name="android:textSize">@dimen/app_default_text_size</item>
+        <item name="android:textColor">#545351</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <style name="linearLayoutMarginTop">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="TopBackgroundTitleBarstyle">
+        <item name="android:background">@drawable/top_bg</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

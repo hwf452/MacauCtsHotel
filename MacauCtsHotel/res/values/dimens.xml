@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <dimen name="top_title_textview_textsize">22sp</dimen>
+    <dimen name="top_title_height">55dp</dimen>
+    <dimen name="margin_parent_left_right">10dp</dimen>
+    <dimen name="main_margin_left_right">4dp</dimen>
+    <dimen name="text_layout1_height">55dp</dimen>
+    <dimen name="text_layout2_height">35dp</dimen>
+    <dimen name="ok_button_margin">50dp</dimen>
+    <dimen name="margin_top_title">30dp</dimen>
+    <dimen name="margin_blew_register">23.8dp</dimen>
+    <dimen name="margin_blew_main">40dp</dimen>
+    <dimen name="app_default_text_size">16sp</dimen>
+    <dimen name="app_default_big_text_size">18sp</dimen>
+    <dimen name="center_text_size">17sp</dimen>
+    <dimen name="checkbox_margin_left_right">40dp</dimen>
+    <dimen name="app_small_textsize">14sp</dimen>
+    <dimen name="ok_button_text_size">20sp</dimen>
+    <dimen name="icon_padding_left_right">13.8dp</dimen>
+    <dimen name="home_big_button_padding_bottom">14dp</dimen>
+    <dimen name="big_edit_text_height">200dp</dimen>
+    <dimen name="big_edit_text_height1">90dp</dimen>
+    <dimen name="listview_items_image_margin_left">7dp</dimen>
+    <dimen name="listview_items_minheight">80dp</dimen>
+    <dimen name="listview_items_imageview_height">60dp</dimen>
+    <dimen name="listview_items_imageview_width">80dp</dimen>
+    <dimen name="space">3dp</dimen>
+    <dimen name="space2">5dp</dimen>
+    <dimen name="spinner_width">50dp</dimen>
+    <dimen name="guide_icon_width_height">10dp</dimen>
+    <dimen name="listview_items_minheight2">70dp</dimen>
+    <dimen name="order_listview_items_textview_height1">30dp</dimen>
+    <dimen name="order_listview_items_textview_height2">20dp</dimen>
+    <dimen name="state_button_height">45dp</dimen>
+    <dimen name="top_view_height">200dp</dimen>
+    <dimen name="listview_items_maxheight">110dp</dimen>
+
+</resources>

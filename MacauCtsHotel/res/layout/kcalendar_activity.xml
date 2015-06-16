@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf4e4" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_time_tv8" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.5dp"
+            android:onClick="backButton"
+            android:layout_centerVertical="true"
+            android:background="@drawable/return_btn_selector" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:id="@+id/relate2"
+    android:layout_width="fill_parent"
+    android:layout_height="36dp"
+    android:layout_below="@+id/relativeLayout1"
+    android:background="@drawable/time_top_background"
+    android:gravity="center_vertical">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/back_button_selected" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#545351"
+        android:textSize="15sp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        
+        android:layout_marginRight="30dp"
+        android:background="@drawable/next_button_selected" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relate2"
+        android:layout_centerHorizontal="true" >
+
+        </RelativeLayout>
+
+    
+   </RelativeLayout>

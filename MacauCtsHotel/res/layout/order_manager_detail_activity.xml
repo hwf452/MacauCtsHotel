@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf4e4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/order_Management" />
+
+        <Button
+            style="@style/TopTitleButton2Style"
+            android:onClick="changeOrder"
+            android:text="@string/change_order" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topTitleLayout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginRight="10.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/list_column_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_number_tv1" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_total_price" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#be5a0d"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel_name_tv3" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/room_type_tv1" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/room_count_tv1" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel_address_tv5" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contrat_phone" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_time_tv3" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_person_tv1" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contrat_persion_phone" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    style="@style/textview33Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extrat_tv1" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    style="@style/textview34Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

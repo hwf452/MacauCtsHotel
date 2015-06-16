@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/hotel_book" />
+
+        <Button
+            style="@style/TopTitleButton2Style"
+            android:onClick="shareOthers"
+            android:text="@string/share" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/image_loading_01" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/textStyle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/portrait1_translucent"
+                    android:gravity="center"
+                    android:padding="@dimen/space2"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/app_default_big_text_size" />
+            </RelativeLayout>
+
+            <LinearLayout style="@style/activityHotelBookLinearLyoutStyle" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/activityHotelBookTextViewStyle" />
+            </LinearLayout>
+
+            <!--
+            <LinearLayout style="@style/activityHotelBookLinearLyoutStyle" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/activityHotelBookTextViewStyle"
+                    android:text="@string/room_type3" />
+
+                <TextView
+                    android:id="@+id/scrollTextView"
+                    style="@style/activityHotelBookTextViewStyle"
+                    android:text="@string/bad_type" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activityHotelBookLinearLyoutStyle" >
+
+                <TextView
+                    style="@style/activityHotelBookTextViewStyle"
+                    android:text="@string/room_size" />
+
+                <TextView
+                    style="@style/activityHotelBookTextViewStyle"
+                    android:text="@string/floor" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activityHotelBookLinearLyoutStyle" >
+
+                <TextView
+                    style="@style/activityHotelBookTextViewStyle"
+                    android:text="@string/wifi_type" />
+            </LinearLayout>            -->
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_parent_left_right"
+                android:layout_marginLeft="@dimen/margin_parent_left_right"
+                android:layout_marginTop="@dimen/margin_top_title"
+                android:divider="@drawable/line" >
+
+                <!--
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/order_comment_radio_button_selected"
+                    android:text="@string/hotel_price1"
+                    android:textColor="@color/item_expandable_group5_child_text_color"
+                    android:textSize="@dimen/center_text_size" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_parent_left_right"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/order_comment_radio_button_selected"
+                    android:text="@string/hotel_price2"
+                    android:textColor="@color/item_expandable_group5_child_text_color"
+                    android:textSize="@dimen/center_text_size" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_parent_left_right"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/order_comment_radio_button_selected"
+                    android:text="@string/hotel_price3"
+                    android:textColor="@color/item_expandable_group5_child_text_color"
+                    android:textSize="@dimen/center_text_size" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_parent_left_right"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/order_comment_radio_button_selected"
+                    android:text="@string/hotel_price4"
+                    android:textColor="@color/item_expandable_group5_child_text_color"
+                    android:textSize="@dimen/center_text_size" />                -->
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                style="@style/activityHotelBookLinearLyoutStyle" 
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:textColor="@color/item_expandable_group5_child_text_color"
+                    android:textSize="@dimen/center_text_size" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remark2"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="@dimen/center_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/checkbox_margin_left_right"
+                android:layout_marginRight="@dimen/checkbox_margin_left_right"
+                android:layout_marginTop="@dimen/margin_blew_register" >
+
+                <CheckBox
+                    android:id="@+id/rtp"
+                    style="@style/checkBoxStyle"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/agree_the_items" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/check_the_items"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="@dimen/app_default_text_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/OK"
+                style="@style/okButtonStyle"
+                android:layout_marginTop="@dimen/text_layout2_height"
+                android:onClick="toNextActivity"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

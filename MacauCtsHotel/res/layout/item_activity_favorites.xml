@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/listview_items_minheight" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/itemImageViewStyle"
+        android:layout_marginBottom="@dimen/margin_parent_left_right"
+        android:layout_marginTop="@dimen/margin_parent_left_right"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/image_loading_03" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_items_minheight"
+        android:layout_marginLeft="@dimen/icon_padding_left_right"
+        android:layout_toRightOf="@id/imageView"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/default_text_color"
+            android:textSize="@dimen/app_default_text_size" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_marginBottom="@dimen/space"
+            android:layout_marginTop="@dimen/space"
+            android:gravity="center_vertical"
+            android:textColor="@color/default_text_color"
+            android:textSize="@dimen/app_small_textsize" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

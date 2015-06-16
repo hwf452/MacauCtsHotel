@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopTitleLayout" >
+
+        <Button
+            android:id="@+id/button"
+            style="@style/TopTitleBackButtonStyle" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/help" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                style="@style/selfMarginTopLayoutStyle" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phoneLayout"
+                style="@style/selfMarginTopLayoutStyle"
+                android:layout_below="@id/nameLayout" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/phone" />
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:inputType="phone"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailLayout"
+                style="@style/selfMarginTopLayoutStyle"
+                android:layout_below="@id/phoneLayout" >
+
+                <TextView
+                    style="@style/selfTextStyle"
+                    android:text="@string/email" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    style="@style/selfEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/suggestionLayout"
+                style="@style/bigSelfMarginTopLayoutStyle"
+                android:layout_below="@id/emailLayout" >
+
+                <EditText
+                    android:id="@+id/suggestionEditText"
+                    style="@style/bigSelfEditTextStyle"
+                    android:gravity="top"
+                    android:hint="@string/suggestion" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/OK"
+                style="@style/okButtonStyle"
+                android:layout_below="@id/suggestionLayout"
+                android:layout_marginTop="55dp"
+                android:text="@string/submit"
+                android:onClick="submit" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
